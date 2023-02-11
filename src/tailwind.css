@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .grid-card {
+    @apply bg-blue-500 aspect-[4/3] rounded-lg md:aspect-[3/4] xl:aspect-[4/3] overflow-hidden relative hover:scale-x-95 transition-all duration-500;
+  }
+
+  .grid-card-img {
+    @apply w-full h-full bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500;
+  }
+
+  .dark {
+    @apply bg-slate-900;
+  }
+
+  .light {
+    @apply bg-slate-100;
+  }
+
+  .secondary {
+    @apply bg-orange-600;
+  }
+}
