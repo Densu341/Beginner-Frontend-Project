@@ -924,32 +924,32 @@ video {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\/assets\/img\/about\.jpg\'\)\] {
-  background-image: url('/assets/img/about.jpg');
+.bg-\[url\(\'assets\/img\/about\.jpg\'\)\] {
+  background-image: url('assets/img/about.jpg');
 }
 
-.bg-\[url\(\'\/assets\/img\/grid\/1\.jpeg\'\)\] {
-  background-image: url('/assets/img/grid/1.jpeg');
+.bg-\[url\(\'assets\/img\/grid\/1\.jpeg\'\)\] {
+  background-image: url('assets/img/grid/1.jpeg');
 }
 
-.bg-\[url\(\'\/assets\/img\/grid\/2\.jpeg\'\)\] {
-  background-image: url('/assets/img/grid/2.jpeg');
+.bg-\[url\(\'assets\/img\/grid\/2\.jpeg\'\)\] {
+  background-image: url('assets/img/grid/2.jpeg');
 }
 
-.bg-\[url\(\'\/assets\/img\/grid\/3\.jpeg\'\)\] {
-  background-image: url('/assets/img/grid/3.jpeg');
+.bg-\[url\(\'assets\/img\/grid\/3\.jpeg\'\)\] {
+  background-image: url('assets/img/grid/3.jpeg');
 }
 
-.bg-\[url\(\'\/assets\/img\/grid\/4\.jpeg\'\)\] {
-  background-image: url('/assets/img/grid/4.jpeg');
+.bg-\[url\(\'assets\/img\/grid\/4\.jpeg\'\)\] {
+  background-image: url('assets/img/grid/4.jpeg');
 }
 
-.bg-\[url\(\'\/assets\/img\/grid\/5\.jpeg\'\)\] {
-  background-image: url('/assets/img/grid/5.jpeg');
+.bg-\[url\(\'assets\/img\/grid\/5\.jpeg\'\)\] {
+  background-image: url('assets/img/grid/5.jpeg');
 }
 
-.bg-\[url\(\'\/assets\/img\/hero\.jpg\'\)\] {
-  background-image: url('/assets/img/hero.jpg');
+.bg-\[url\(\'assets\/img\/hero\.jpg\'\)\] {
+  background-image: url('assets/img/hero.jpg');
 }
 
 .bg-gradient-to-t {

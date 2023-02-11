@@ -3,6 +3,6 @@
     "tailwindcss": "^3.2.6"
   },
   "scripts": {
-    "dev": "tailwindcss -i src/tailwind.css -o /css/style.css --watch"
+    "dev": "tailwindcss -i /src/tailwind.css -o /public/css/style.css --watch"
   }
 }
