@@ -1,0 +1,157 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --dark-color: #001c30;
+  --light-color: #dafffb;
+  --primary-color: #176b87;
+  --secondary-color: #64ccc5;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: var(--primary-color);
+  width: 100%;
+  margin-inline: auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-block: 1rem;
+  z-index: 999;
+}
+
+header .brand img {
+  width: 150px;
+}
+
+header .list ul {
+  padding-left: 0;
+  display: flex;
+  justify-content: center;
+  gap: 1rem 1rem;
+}
+
+header .list li {
+  list-style-type: none;
+}
+
+header .list li a {
+  text-decoration: none;
+  font-size: 1.08rem;
+  font-weight: 500;
+  color: var(--secondary-color);
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  transition: all 0.2s ease-in;
+}
+
+header .list li:hover a {
+  background-color: var(--primary-color);
+  color: var(--light-color);
+}
+
+main {
+  padding: 0 20px;
+  height: 100vh;
+  background-color: var(--light-color);
+  display: flex;
+}
+
+main #hero {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  padding: 10px 40px;
+}
+
+main #hero .title {
+  font-size: 3rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+main #hero .subtitle {
+  font-size: 2.5rem;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+main #hero article p {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+main #hero article .btn-connect {
+  padding: 10px 16px;
+  background-color: var(--dark-color);
+  color: var(--light-color);
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+main #hero article .btn-connect:hover {
+  padding: 10px 16px;
+  background-color: var(--light-color);
+  color: var(--dark-color);
+  cursor: pointer;
+  border-radius: 999px;
+}
+
+main aside {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main aside img {
+  width: 420px;
+}
+
+/* Style dropdown button */
+.dropbtn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+/* Style the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* Style the dropdown links */
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+/* Change color on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
