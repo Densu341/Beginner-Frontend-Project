@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
 
 *,
 *::before,
@@ -7,132 +7,66 @@
 }
 
 :root {
-  --dark-color: #001c30;
-  --light-color: #dafffb;
-  --primary-color: #176b87;
-  --secondary-color: #64ccc5;
+  --light: #f1efef;
+  --dark: #191717;
+  --primary: #7d7c7c;
+  --secondary: #ccc8aa;
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
   margin: 0;
+  font-family: "Montserrat", sans-serif;
   display: flex;
   flex-direction: column;
 }
 
-header {
-  background-color: var(--primary-color);
-  width: 100%;
-  margin-inline: auto;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  padding-block: 1rem;
-  z-index: 999;
-}
-
-header .brand img {
-  width: 150px;
-}
-
-header .list ul {
-  padding-left: 0;
-  display: flex;
-  justify-content: center;
-  gap: 1rem 1rem;
-}
-
-header .list li {
-  list-style-type: none;
-}
-
-header .list li a {
-  text-decoration: none;
-  font-size: 1.08rem;
+.navbar {
   font-weight: 500;
-  color: var(--secondary-color);
-  padding: 0.5rem 1rem;
-  border-radius: 999px;
-  transition: all 0.2s ease-in;
-}
-
-header .list li:hover a {
-  background-color: var(--primary-color);
-  color: var(--light-color);
-}
-
-main {
-  padding: 0 20px;
-  height: 100vh;
-  background-color: var(--light-color);
+  width: 100%;
   display: flex;
-}
-
-main #hero {
-  flex: 1;
-  display: flex;
+  justify-content: space-between;
   align-items: center;
-  padding: 10px 40px;
+  background-color: var(--dark);
+  padding: 20px 20px;
+  color: var(--secondary);
 }
 
-main #hero .title {
-  font-size: 3rem;
-  font-weight: 700;
+.logo img {
+  margin-left: 40px;
+  width: 100px;
+  height: auto;
+}
+
+.nav-links {
+  list-style: none;
   margin: 0;
-}
-
-main #hero .subtitle {
-  font-size: 2.5rem;
-  margin: 10px 0;
-  font-weight: 700;
-}
-
-main #hero article p {
-  font-size: 1rem;
-  font-weight: 400;
-}
-
-main #hero article .btn-connect {
-  padding: 10px 16px;
-  background-color: var(--dark-color);
-  color: var(--light-color);
-  cursor: pointer;
-  border-radius: 999px;
-}
-
-main #hero article .btn-connect:hover {
-  padding: 10px 16px;
-  background-color: var(--light-color);
-  color: var(--dark-color);
-  cursor: pointer;
-  border-radius: 999px;
-}
-
-main aside {
-  flex: 1;
+  padding: 0;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-main aside img {
-  width: 420px;
+.nav-links li {
+  margin-right: 40px;
 }
 
-/* Style dropdown button */
-.dropbtn {
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
-  border: none;
-  cursor: pointer;
+.nav-links a {
+  text-decoration: none;
+  color: var(--secondary);
+}
+.nav-links a:hover {
+  color: var(--light);
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
 }
 
 /* Style the dropdown content (hidden by default) */
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f1f1f1;
+  background-color: var(--dark);
+  border-radius: 20px;
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
@@ -148,10 +82,326 @@ main aside img {
 
 /* Change color on hover */
 .dropdown-content a:hover {
-  background-color: #ddd;
+  background-color: var(--primary);
+  color: var(--light);
 }
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: var(--light);
+  margin: 3px 0;
+}
+
+main {
+  background-color: var(--light);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+article {
+  flex: 1;
+  padding-left: 60px;
+  margin-right: 10px;
+  box-sizing: border-box;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.description {
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.btn-connect {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-connect:hover {
+  background-color: var(--primary);
+}
+
+aside {
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  max-width: 100%;
+  width: 400px;
+  height: auto;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.card {
+  flex: 1;
+  background-color: var(--light);
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.column-about {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--light);
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.column-about:first-child {
+  margin-right: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.column-contact {
+  flex: 1;
+  padding: 20px;
+  background-color: var(--light);
+  border: 1px solid var(--secondary);
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.column-contact:first-child {
+  margin-right: 10px;
+}
+
+.column-contact:last-child {
+  display: flex;
+  justify-content: center;
+}
+
+.about-img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.description {
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--secondary);
+  border-radius: 10px;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  background-color: var(--dark);
+  color: var(--light);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary);
+}
+
+/* CSS untuk elemen popup */
+.popup {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.close-btn {
+  right: -320px;
+  top: -15px;
+  position: relative;
+  cursor: pointer;
+}
+
+/* CSS untuk footer */
+footer {
+  background-color: var(--dark);
+  color: var(--secondary);
+  padding: 20px;
+}
+
+footer p {
+  text-align: center;
+}
+
+button#toTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 20px;
+  background-color: var(--dark);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button#toTopBtn:hover {
+  background-color: var(--primary);
+}
+
+/* Media Query untuk tampilan mobile */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--dark);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .nav-links li {
+    margin: 0;
+    text-align: center;
+  }
+
+  .dropdown:hover .dropdown-content {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  article {
+    padding-left: 10px;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  aside {
+    order: -1;
+  }
+
+  section {
+    flex-direction: column;
+  }
+
+  .card {
+    flex: 1;
+    margin: 10px 0;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .column-about,
+  .column-contact {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .column-contact:first-child,
+  .column-about:first-child {
+    margin-right: 0;
+  }
+
+  .popup-content {
+    max-width: 90%;
+  }
+
+  .close-btn {
+    right: -300px;
+  }
 }

@@ -3,57 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
     <title>Deni Irawan</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header>
-      <div class="brand">
-        <img src="./img/logo-light.png" alt="Deni Logo" />
-      </div>
-      <nav class="list">
-        <ul>
-          <li>
-            <a href="#">Home</a>
+      <nav class="navbar">
+        <div class="logo"><img src="img/logo.svg" alt="" /></div>
+        <ul class="nav-links">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#card-container">Services</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown">
+            <a class="dropbtn">Activity ▽</a>
+            <div class="dropdown-content" id="myDropdown">
+              <a href="#">Blog</a>
+              <a href="#">Gallery</a>
+              <a href="#">Short</a>
+              <a href="#">Video</a>
+            </div>
           </li>
-          <li>
-            <a href="#">About</a>
-          </li>
-          <li>
-            <a href="#">Portfolio</a>
-          </li>
-          <li>
-            <a href="#">Contact</a>
-          </li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <div class="hamburger">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
       </nav>
     </header>
     <main>
-      <div id="hero">
-        <article>
-          <h1 class="title">Hello 👋</h1>
-          <h2 class="subtitle" id="typing-text"></h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa
-            dolorem beatae minima exercitationem officiis adipisci nesciunt
-            eligendi corrupti reiciendis deleniti.
+      <article id="hero">
+        <h1 class="title">Hello 👋</h1>
+        <h2 class="subtitle" id="typing-text"></h2>
+        <p class="description">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam
+          repudiandae qui, nostrum magni est illum in necessitatibus voluptatum
+          sequi nihil.
+        </p>
+        <button class="btn-connect">Let's Connect</button>
+      </article>
+      <aside>
+        <img src="img/Deny.png" alt="Gambar" />
+      </aside>
+      <section id="card-container"></section>
+      <section class="container" id="about">
+        <div class="column-about">
+          <img
+            class="about-img"
+            src="img/profile-pic.jpg"
+            alt="About Us Image"
+          />
+        </div>
+        <div class="column-about">
+          <h2>About Us</h2>
+          <p class="description">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit
+            amet augue mauris. Donec malesuada bibendum neque, eget malesuada
+            lorem pellentesque in. Vivamus vehicula tortor eu mi aliquet, a
+            blandit lectus aliquam. Curabitur tincidunt, est et placerat
+            pellentesque, libero ex posuere purus, eu bibendum tellus libero a
+            elit.
           </p>
-          <button class="btn-connect">Let's Connect</button>
-        </article>
-      </div>
-      <aside><img src="./img/Deny.png" alt="Picture" /></aside>
-      <div class="dropdown">
-        <button class="dropbtn">Pilih Opsi</button>
-        <div class="dropdown-content" id="myDropdown">
-          <a href="#">Item 1</a>
-          <a href="#">Item 2</a>
-          <a href="#">Item 3</a>
-          <a href="#">Item 4</a>
+        </div>
+      </section>
+      <section class="container" id="contact">
+        <div class="column-contact">
+          <h2>Contact Us</h2>
+          <form id="contact-form">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit" id="submit-btn">Send</button>
+          </form>
+        </div>
+        <div class="column-contact">
+          <img src="img/img-contact.jpg" alt="contact-img" />
+        </div>
+      </section>
+      <!-- Popup -->
+      <div class="popup" id="popup">
+        <div class="popup-content">
+          <span class="close-btn" id="close-btn">❌</span>
+          <h2>Message Sent!</h2>
+          <p>Your message has been sent successfully.</p>
         </div>
       </div>
     </main>
-    <footer></footer>
-
-    <script src="./js/script.js"></script>
+    <button id="toTopBtn">⬆️</button>
+    <footer>
+      <p>Copyright &copy; 2023 Deni Irawan. Allright Reserved</p>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
 </html>
