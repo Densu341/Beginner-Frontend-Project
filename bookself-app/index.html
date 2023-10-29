@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bookself App</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="Judul">Bookshelf App</h1>
+    </header>
+    <main>
+      <div class="container">
+        <div class="book-done">
+          <h2 class="Judul">Sudah Dibaca</h2>
+          <div class="list-book"></div>
+        </div>
+      </div>
+      <div class="container">
+        <div class="search">
+          <form action="">
+            <div class="form-group">
+              <label for="keyword">Cari Buku</label>
+              <input type="text" id="keyword" placeholder="Cari Judul Buku" />
+            </div>
+          </form>
+        </div>
+        <div class="add-book">
+          <form id="add-book-form">
+            <div class="form-group">
+              <label for="title">Judul Buku</label>
+              <input
+                type="text"
+                id="title"
+                placeholder="Masukan Judul Buku"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="author">Penulis</label>
+              <input
+                type="text"
+                id="author"
+                placeholder="Masukan Nama Penulis"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="year">Tahun</label>
+              <input
+                type="number"
+                id="year"
+                placeholder="Masukan Tahun"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <input type="checkbox" id="isComplete" />
+              <label for="isComplete">Sudah dibaca</label>
+            </div>
+            <button type="submit" id="add-book-btn">Tambahkan Buku</button>
+          </form>
+        </div>
+      </div>
+      <div class="container">
+        <div class="not-done-read">
+          <h2 class="Judul">Belum Dibaca</h2>
+          <div class="list-book"></div>
+        </div>
+      </div>
+      <dialog id="delete-dialog">
+        <p>Apakah Anda yakin ingin menghapus buku ini?</p>
+        <button id="confirm-delete-btn">Hapus</button>
+        <button id="cancel-delete-btn">Batal</button>
+      </dialog>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

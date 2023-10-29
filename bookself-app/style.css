@@ -1,0 +1,106 @@
+body {
+  background-color: #f0f0f0;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  height: 100%;
+}
+
+.container {
+  background-color: #f0f0f0;
+  border-radius: 20px;
+  box-shadow: -10px -10px 20px #ffffff, 10px 10px 20px #d1cdc7;
+  padding: 10px 30px 10px 20px;
+  max-width: 700px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  padding: 10px;
+}
+
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #d1cdc7;
+  border-radius: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 10px;
+}
+
+#add-book-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#add-book-btn:hover {
+  background-color: #45a049;
+}
+
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.Judul {
+  font-size: 36px;
+  color: #4caf50;
+  text-shadow: 2px 2px 4px #d1cdc7;
+}
+
+.search {
+  margin-bottom: 20px;
+}
+
+.search input[type="text"] {
+  padding: 10px 0px 10px 10px;
+  border: 1px solid #d1cdc7;
+  border-radius: 10px;
+}
+
+#search-btn,
+.btn-delete,
+.btn-move,
+#confirm-delete-btn,
+#cancel-delete-btn {
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-left: 10px;
+  margin-bottom: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-delete,
+#confirm-delete-btn {
+  background-color: #f44336;
+}
+
+.btn-move,
+#cancel-delete-btn {
+  background-color: #2196f3;
+}
+
+#search-btn:hover {
+  background-color: #45a049;
+}
