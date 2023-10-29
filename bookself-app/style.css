@@ -1,6 +1,5 @@
 body {
   background-color: #f0f0f0;
-  height: 100vh;
   margin: 0;
   font-family: Arial, sans-serif;
 }
@@ -10,7 +9,6 @@ main {
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
-  height: 100%;
 }
 
 .container {
